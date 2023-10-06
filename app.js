@@ -36,8 +36,8 @@ app.get ("/turing", (req, res) => {
     res.sendFile (path.join (__dirname, "./views/turing.html"))
 });
 
-app.use(express.static("./public/img/"));
-app.use(express.static("./public/css/styles.css"));
+app.use(express.static("public"));
+
 
 
 
